@@ -69,3 +69,9 @@ A cache-disabled browser navigation followed by `Page.reload(ignoreCache: true)`
 Production target: <https://teknritsolutions-2.github.io/Electrician-Home-Wiring-Service/>. Pages is configured to publish `main` from the repository root. The final handoff reports the pushed commit and production verification result.
 
 The enquiry form remains frontend-only. It does not send requests, confirm appointments or arrange emergency dispatch. Indicative rates and provider credentials still require client verification. The specified source structure keeps the 404 page at `pages/404.html`; GitHub's unknown-route response does not automatically select it without an additional root 404 file.
+
+## Back-to-top position correction
+
+The arrow is now fixed to the viewport, 20px from its logical end and bottom edge (with safe-area allowance). It appears after 300px of scrolling and hides on returning to the top. Footer spacing reserves room for it. Its click retains smooth scrolling and respects reduced-motion preferences.
+
+Sixteen browser cases covered Home 1 and Contact, 1440px/390px, LTR/RTL, and normal/reduced motion. Checks exercised real clicks from the footer, verified `scrollY === 0`, stable viewport placement across scroll positions, hidden-at-top behavior and the sticky header. See [desktop](screenshots/back-top-fixed-desktop.png) and [mobile](screenshots/back-top-fixed-mobile.png) captures.

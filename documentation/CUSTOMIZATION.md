@@ -6,7 +6,7 @@ Only `index.html` is a root HTML page. All 13 secondary pages are in `pages/`. S
 
 ## Branding
 
-The project title is used as a descriptive identity, not an invented company name. The logo combines two conductive paths and junction nodes. Light/dark SVG exports and the favicon are in `assets/images/`. The new favicon is a compact socket/junction drawing in a Carbon Slate enclosure with Volt Citron contacts. All pages request `circuit-socket-v2.svg?v=2` and include `favicon-32-v2.png?v=2` as a fallback. `favicon.svg` also contains the replacement artwork; the previous icon is gone. Native 16px and 32px PNG exports are included. Style and behavior URLs use `?v=2` to prevent old assets from surviving an HTML refresh. Live header/footer SVGs use theme-aware color without mirroring in RTL.
+The project title is used as a descriptive identity, not an invented company name. The logo combines two conductive paths and junction nodes. Light/dark SVG exports and the favicon are in `assets/images/`. The new favicon is a compact socket/junction drawing in a Carbon Slate enclosure with Volt Citron contacts. All pages request `circuit-socket-v2.svg?v=2` and include `favicon-32-v2.png?v=2` as a fallback. `favicon.svg` also contains the replacement artwork; the previous icon is gone. Native 16px and 32px PNG exports are included. The main stylesheet and behavior URLs use `?v=3` (other theme styles remain at `?v=2`) to prevent old assets from surviving an HTML refresh. Live header/footer SVGs use theme-aware color without mirroring in RTL.
 
 The two brand colors are Carbon Slate `#26343B` and Volt Citron `#D2ED68`. Semantic neutral and surface variables live at the top of `style.css`; dark overrides are in `dark-mode.css`. Headings use Sora; body copy uses DM Sans. Fonts and images do not request a third-party service at runtime.
 
@@ -45,3 +45,5 @@ Use the visible RTL/LTR control to change reading direction; photographs and the
 ## Deployment
 
 This is a static website. No build artifacts or dependencies need to be uploaded. All assets are local and every internal URL is relative. Any host must serve the correct MIME types for HTML, CSS, JS, JPEG, SVG and TTF. Preserve the folder tree when publishing to a GitHub Pages project subdirectory.
+
+The back-to-top arrow is a fixed 46px viewport control at the logical end/bottom, visible after 300px of scrolling. Its click returns to the actual page top; reduced-motion mode uses an immediate scroll. It is no longer positioned by the footer layout.
