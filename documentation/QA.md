@@ -1,65 +1,71 @@
-# Quality assurance
+# Design refinement: QA evidence
 
-Verification performed on 30 October 2026 using Playwright with the locally installed Brave/Chromium browser. Browser tooling and temporary test scripts were kept outside the deliverable. The site itself has no test or build dependency.
+Reviewed baseline: `45d072e88043e1698bb466cf1f896e81520e70c1`.
 
-## Executed checks
+Verification date: 30 October 2026. Browser automation used Playwright with the locally installed Brave/Chromium browser. Temporary testing tools stayed outside the repository; there are no application build or testing dependencies.
 
-| Check | Result |
+## Checks
+
+| Scope | Executed verification |
 | --- | --- |
-| Responsive layout matrix | 616 combinations passed: 14 HTML pages × 11 widths × 2 themes × 2 directions |
-| Widths | 320, 360, 390, 430, 640, 768, 820, 1024, 1280, 1440, 1920 pixels |
-| Overflow and images | No document/body horizontal overflow and no missing displayed images in the matrix |
-| Font, asset and hosting smoke checks | All eight local font weights loaded; no external requests or HTTP failures; relative subdirectory navigation and booking passed; reduced-motion mode disabled travelling lights |
-| JavaScript | Both scripts passed `node --check`; no runtime errors in the layout pass |
-| Links and assets | 620 local references checked, including target files, fragment anchors and duplicate IDs; no failures |
-| Functional assertions | 57 passed |
-| Accessibility | 48 axe-core audits of six key routes × desktop/mobile × light/dark × LTR/RTL; no WCAG A/AA findings reported |
-| Visual review | Actual browser captures of all 14 public pages reviewed, plus desktop/tablet/mobile and dark RTL delivery screenshots |
+| Layout matrix | 14 HTML pages × 11 widths × 2 themes × 2 directions = 616 combinations |
+| Widths | 320, 360, 390, 430, 640, 768, 820, 1024, 1280, 1440 and 1920 pixels |
+| Layout checks | Document and body bounds, displayed image loading and runtime errors |
+| Functional regression | 57 assertions covering navigation, theme/direction persistence, explorers, pricing and enquiry handoff |
+| Accessibility | 48 axe-core audits: six key routes × desktop/mobile × light/dark × LTR/RTL |
+| Refinement-specific checks | 84 route/width/direction combinations covering meaningful font sizes, heading/copy/action gutters and menu visibility |
+| Source audit | Local link and anchor targets, unique IDs, relative asset paths, versioned favicon references and standalone SVG validity |
+| Fonts and subdirectory hosting | All eight font weights loaded; GitHub Pages-style relative navigation, booking prefill and reduced-motion behavior checked |
 
-The six accessibility routes were Home 1, Home 2, Services, Pricing Guide, Contact and FAQ. Axe checks are automated evidence, not a claim of full WCAG certification. Layout checks cover all 14 pages; service and article variants were also checked through their actual query-driven interactions.
+The layout pass reported no horizontal overflow, missing displayed images or runtime errors. All 57 functional assertions passed. The 48 accessibility audits reported no WCAG A/AA findings. This is automated evidence, not a claim of full accessibility certification. All 84 refinement-specific combinations passed.
 
-## Functional coverage
+## Preserved functionality
 
-- Home menu: click, hover, keyboard activation, Escape and outside click.
-- Sticky header after scrolling; working back-to-top.
-- Mobile drawer opening from the correct side in LTR and RTL, controls inside the drawer and closing on the scrim.
-- Light/dark and reading-direction changes persisted across reloads.
-- All four switchboard modules updated their selected states and detail links; arrow-key and End navigation worked.
-- All four home diagram selections updated the associated service link.
-- Six service detail variants displayed substantial scope information and correct booking-prefill links.
-- Pricing filters restored the appropriate two fitting rows, three quote rows or all seven rows.
-- Pricing enquiry links preselected the intended booking service.
-- Empty form blocked review; a past date failed validation.
-- Hazard urgency showed the keep-away message.
-- Valid details produced an unsent request summary; user-entered markup remained literal text.
-- Copy handoff placed the expected request on the clipboard; download contained the expected request text.
-- Editing returned to the form with details retained.
-- FAQ accordion activated from the keyboard.
+- Home dropdown by hover, click and keyboard, with Escape and outside-click dismissal.
+- Sticky navigation after scrolling and the back-to-top action.
+- Mobile drawer on the appropriate LTR/RTL side, controls inside it, and scrim dismissal.
+- Persistent light/dark and direction settings.
+- All four switchboard modules, selected states, updated detail links and arrow/Home/End keyboard navigation.
+- All four Home 2 room-selector buttons.
+- Six meaningful query-selected service details with matching booking links.
+- Pricing category filters and correct service prefill.
+- Required-field and past-date validation; preferred time and urgency selection.
+- Hazard guidance, request review, safely rendered entered text, copy, download and editing with retained details.
+- Keyboard-operable FAQ accordions.
 
-## Corrections during QA
+## Composition changes verified
 
-- Replaced an unrelated stock-image download after direct asset inspection.
-- Changed mobile rates from a wide table into readable stacked rows.
-- Corrected interaction between hover opening and the first dropdown click.
-- Removed service-card background-color interpolation during theme changes so text and surface colors update together.
-- Removed an aspect-ratio/min-height conflict that extended a safety photograph beyond the mobile body width.
-- Used natural bidirectional paragraph handling to keep English punctuation readable in the RTL layout.
+Only Home 1 contains the complete service-request route. About uses a professional-standards ledger and communication questions. Services uses a compact visit summary, with neither homepage explorer repeated. Home 2 has separate lighting, wiring/accessory, panel, safety-consideration and estimate compositions. Closing headings and copy are page-specific. Contact has no duplicate booking CTA section below its form.
 
-## Screenshots
+The CSS is organized into eight source groups and consolidated breakpoint rules. Meaningful labels use at least 14px; body and service descriptions remain readable as modules stack on small screens. The compact 13px logo subtitle is an intentional brand lockup exception. Narrow FAQ/legal content starts at the shared logical gutter. There are no centered public text sections.
 
-- [Home 1 — desktop](screenshots/home-desktop.png)
-- [Home 1 — tablet](screenshots/home-tablet.png)
-- [Home 1 — mobile](screenshots/home-mobile.png)
-- [Home 2 — desktop](screenshots/home2-desktop.png)
-- [Pricing — mobile](screenshots/pricing-mobile.png)
-- [Booking — dark RTL on tablet](screenshots/booking-dark-rtl.png)
+## Visual evidence
 
-## Deployment boundaries
+Full-page captures were inspected for all eight requested routes at **1440px desktop, 820px tablet and 390px mobile**. The files are in `screenshots/`:
 
-The source is static and uses relative links for GitHub Pages project hosting. No repository or GitHub Pages target was supplied, so an actual GitHub Pages production deployment was not performed or claimed. See README for setup. The exact requested source structure places the custom 404 at `pages/404.html`; GitHub does not automatically select it for unknown routes without an additional root 404 page.
+| Page | Desktop | Tablet | Mobile |
+| --- | --- | --- | --- |
+| Home 1 | [View](screenshots/home-desktop.png) | [View](screenshots/home-tablet.png) | [View](screenshots/home-mobile.png) |
+| Home 2 | [View](screenshots/home2-desktop.png) | [View](screenshots/home2-tablet.png) | [View](screenshots/home2-mobile.png) |
+| About | [View](screenshots/about-desktop.png) | [View](screenshots/about-tablet.png) | [View](screenshots/about-mobile.png) |
+| Services | [View](screenshots/services-desktop.png) | [View](screenshots/services-tablet.png) | [View](screenshots/services-mobile.png) |
+| Service Details | [View](screenshots/service-details-desktop.png) | [View](screenshots/service-details-tablet.png) | [View](screenshots/service-details-mobile.png) |
+| Pricing Guide | [View](screenshots/pricing-desktop.png) | [View](screenshots/pricing-tablet.png) | [View](screenshots/pricing-mobile.png) |
+| FAQ | [View](screenshots/faq-desktop.png) | [View](screenshots/faq-tablet.png) | [View](screenshots/faq-mobile.png) |
+| Contact | [View](screenshots/contact-desktop.png) | [View](screenshots/contact-tablet.png) | [View](screenshots/contact-mobile.png) |
 
-The form has no sending integration. End-to-end delivery to a service provider, real coverage, actual rates, credentials and appointment availability cannot be verified from a frontend-only template.
+Additional captures cover [dark Home 1](screenshots/home-dark-desktop.png), [light RTL Home 2](screenshots/home2-light-rtl-tablet.png), [dark RTL booking](screenshots/booking-dark-rtl.png), [dark RTL mobile Services](screenshots/services-dark-rtl-mobile.png), and the [favicon at native sizes on light/dark surfaces](screenshots/favicon-v2-review.png).
 
-## Optional hosted preview
+Visual QA caught and corrected a desktop menu-button cascade conflict, a narrow-content gutter mismatch and a tightly cropped directory image. The pricing project-enquiry copy/action now follows a single editorial alignment rather than a remote second column.
 
-A private Sites destination was registered, but source upload was blocked by automatic approval review because the user had not explicitly authorized that external publication destination. No source upload or deployment succeeded. The local deliverable is complete and unaffected. Publication requires explicit approval.
+## Favicon verification
+
+Every HTML page references the newly named `circuit-socket-v2.svg?v=2`, with a versioned 32px PNG fallback. The conventional `favicon.svg` was also replaced. The SVG is standalone, namespaced and has a `0 0 32 32` viewBox. Native 16px/32px PNGs were rendered from the artwork and visually reviewed against white and near-black surfaces.
+
+A cache-disabled browser navigation followed by `Page.reload(ignoreCache: true)` requested the new SVG twice, returning HTTP 200 and `image/svg+xml`, with `fromDiskCache: false`. Browser tab chrome itself is outside the headless screenshot surface; it was not captured or claimed as a screenshot. Both the browser-fetched asset and its rendered artwork were checked.
+
+## Deployment and operational boundaries
+
+Production target: <https://teknritsolutions-2.github.io/Electrician-Home-Wiring-Service/>. Pages is configured to publish `main` from the repository root. The final handoff reports the pushed commit and production verification result.
+
+The enquiry form remains frontend-only. It does not send requests, confirm appointments or arrange emergency dispatch. Indicative rates and provider credentials still require client verification. The specified source structure keeps the 404 page at `pages/404.html`; GitHub's unknown-route response does not automatically select it without an additional root 404 file.

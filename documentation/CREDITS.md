@@ -14,6 +14,17 @@ Pexels images are distributed under the [Pexels License](https://www.pexels.com/
 | `pendant.jpg` | [Hanging white lights, 12128458](https://www.pexels.com/photo/hanging-white-lights-12128458/) | See source attribution |
 | `fan.jpg` | [Empty room with ceiling fan, 7027792](https://www.pexels.com/photo/empty-room-with-ceiling-fan-7027792/) | Curtis Adams |
 
+## Additional photographs in the refined edition
+
+These locally compressed Pexels photographs were visually inspected before use. They add installation context, component details and completed lighting without replacing the retained homepage hero. No additional technician identity or business affiliation is implied.
+
+| Local asset | Original source | Photographer |
+| --- | --- | --- |
+| `inspection.jpg` | [Electrician repairing a fuse box, 8005368](https://www.pexels.com/photo/an-electrician-repairing-a-fuse-box-8005368/) | Emmanuel Ikwuegbu |
+| `electrical-tools.jpg` | [Variety of tools on a white surface, 6349402](https://www.pexels.com/photo/variety-of-tools-on-white-surface-6349402/) | ERIC MUFASA |
+| `kitchen-lighting.jpg` | [Modern kitchen interior with elegant lighting, 36777864](https://www.pexels.com/photo/modern-kitchen-interior-with-elegant-lighting-36777864/) | Curtis Adams |
+| `lighting-detail.jpg` | [Photo of black hanging lights, 13108827](https://www.pexels.com/photo/photo-of-black-hanging-lights-13108827/) | See source attribution |
+
 ## Typography
 
 - [Sora](https://fonts.google.com/specimen/Sora), distributed under the SIL Open Font License 1.1; full license in `assets/fonts/Sora-LICENSE.txt`.

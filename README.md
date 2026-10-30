@@ -23,6 +23,12 @@ Visit `http://localhost:4173`. A local HTTP server supports the clipboard handof
 - Persistent light/dark and LTR/RTL preferences, mobile drawer, keyboard navigation, FAQ accordions, sticky navigation and reduced-motion support.
 - Local photographs, local fonts, SVG logo variants and favicon.
 
+## Design refinement
+
+The refined edition uses start-aligned editorial headings, larger supporting type, a diagnostic service index, a modular request route, an architectural lighting composition, a professional-standards ledger, and a varied service directory. The existing switchboard selector, Home 2 room selector and enquiry workflow remain intact.
+
+The consolidated stylesheet is organized into tokens, typography, layout, navigation, controls, shared components, page components and responsive rules. The new socket/junction favicon uses a freshly named, versioned SVG with PNG fallback. Updated screenshots cover eight key pages at desktop, tablet and mobile widths.
+
 ## Important operational details
 
 The enquiry form is frontend-only. It does **not** send, store or confirm requests. Visitors review and copy/download their details to share directly with a provider. No provider phone number, address, service coverage, credentials or availability was supplied; none is invented.
@@ -36,6 +42,6 @@ Rates are illustrative design defaults, clearly disclosed on the site. Edit all 
 3. Keep `index.html`, `pages/` and `assets/` together. Every site link uses relative paths, including project-subdirectory hosting.
 4. Verify the published URL after GitHub finishes deployment.
 
-No GitHub repository or GitHub Pages deployment target was supplied. Compatibility is checked locally; a GitHub Pages production deployment cannot be verified without that destination. `pages/404.html` is an intentional utility page; the exact requested structure does not include a root `404.html`, so GitHub's default unknown-route response will not automatically use it.
+Repository: [teknritsolutions-2/Electrician-Home-Wiring-Service](https://github.com/teknritsolutions-2/Electrician-Home-Wiring-Service). The production destination is [GitHub Pages](https://teknritsolutions-2.github.io/Electrician-Home-Wiring-Service/), publishing `main` from `/ (root)`. `pages/404.html` is an intentional utility page; the exact requested structure does not include a root `404.html`, so GitHub's default unknown-route response will not automatically use it.
 
 Read [customization and integration notes](documentation/CUSTOMIZATION.md), [asset credits](documentation/CREDITS.md) and [QA evidence](documentation/QA.md).
