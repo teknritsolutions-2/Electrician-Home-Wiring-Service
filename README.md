@@ -1,4 +1,4 @@
-# Electrician & Home Wiring Service
+# Ohmivra — Home Electrical Care
 
 A complete, buildless HTML5, CSS3 and vanilla JavaScript website using the Circuit Grid design system. The workspace is the website root: `index.html` is the actual homepage.
 
@@ -44,4 +44,4 @@ Rates are illustrative design defaults, clearly disclosed on the site. Edit all 
 
 Repository: [teknritsolutions-2/Electrician-Home-Wiring-Service](https://github.com/teknritsolutions-2/Electrician-Home-Wiring-Service). The production destination is [GitHub Pages](https://teknritsolutions-2.github.io/Electrician-Home-Wiring-Service/), publishing `main` from `/ (root)`. `pages/404.html` is an intentional utility page; the exact requested structure does not include a root `404.html`, so GitHub's default unknown-route response will not automatically use it.
 
-Read [customization and integration notes](documentation/CUSTOMIZATION.md), [asset credits](documentation/CREDITS.md) and [QA evidence](documentation/QA.md).
+Read the [brand and name-screening notes](documentation/BRANDING.md), [customization and integration notes](documentation/CUSTOMIZATION.md), [asset credits](documentation/CREDITS.md) and [QA evidence](documentation/QA.md).

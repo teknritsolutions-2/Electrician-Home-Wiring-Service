@@ -6,7 +6,9 @@ Only `index.html` is a root HTML page. All 13 secondary pages are in `pages/`. S
 
 ## Branding
 
-The project title is used as a descriptive identity, not an invented company name. The logo combines two conductive paths and junction nodes. Light/dark SVG exports and the favicon are in `assets/images/`. The new favicon is a compact socket/junction drawing in a Carbon Slate enclosure with Volt Citron contacts. All pages request `circuit-socket-v2.svg?v=2` and include `favicon-32-v2.png?v=2` as a fallback. `favicon.svg` also contains the replacement artwork; the previous icon is gone. Native 16px and 32px PNG exports are included. The main stylesheet and behavior URLs use `?v=3` (other theme styles remain at `?v=2`) to prevent old assets from surviving an HTML refresh. Live header/footer SVGs use theme-aware color without mirroring in RTL.
+The public brand is **Ohmivra**, with the descriptor **Home Electrical Care**. See `BRANDING.md` for the dated naming search and its limits. Headers, footers and the favicon reference the same `circuit-socket-v2.svg?v=2` artwork. `logo-light.svg` and `logo-dark.svg` export that identical two-color symbol. The mark stays unflipped in RTL. The name and descriptor for generated content are in `ELECTRICAL_CONFIG.brand`; static HTML titles and brand lockups also contain the name for immediate, accessible rendering.
+
+The existing favicon SVG and 16px/32px PNGs retain their approved artwork. Main stylesheet, configuration and behavior URLs use `?v=4` for this branding update; no hosting path or repository rename is required.
 
 The two brand colors are Carbon Slate `#26343B` and Volt Citron `#D2ED68`. Semantic neutral and surface variables live at the top of `style.css`; dark overrides are in `dark-mode.css`. Headings use Sora; body copy uses DM Sans. Fonts and images do not request a third-party service at runtime.
 

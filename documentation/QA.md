@@ -75,3 +75,9 @@ The enquiry form remains frontend-only. It does not send requests, confirm appoi
 The arrow is now fixed to the viewport, 20px from its logical end and bottom edge (with safe-area allowance). It appears after 300px of scrolling and hides on returning to the top. Footer spacing reserves room for it. Its click retains smooth scrolling and respects reduced-motion preferences.
 
 Sixteen browser cases covered Home 1 and Contact, 1440px/390px, LTR/RTL, and normal/reduced motion. Checks exercised real clicks from the footer, verified `scrollY === 0`, stable viewport placement across scroll positions, hidden-at-top behavior and the sticky header. See [desktop](screenshots/back-top-fixed-desktop.png) and [mobile](screenshots/back-top-fixed-mobile.png) captures.
+
+## Ohmivra identity update
+
+All 14 page identities were checked after adopting **Ohmivra — Home Electrical Care**. Header and footer image URLs match the favicon SVG, both exported logos match its bytes, and dynamic service/article titles include the brand. The 616 layout combinations, 57 functional assertions and 48 accessibility audits passed again.
+
+Eight dedicated header/footer captures cover desktop/mobile light, dark and RTL views: `screenshots/ohmivra-header-*` and `screenshots/ohmivra-footer-*`. Earlier full-page screenshots record the preceding layout refinement; these dedicated brand captures show the current identity. Name-search queries and their limits are recorded in [BRANDING.md](BRANDING.md).

@@ -8,7 +8,6 @@ html[data-theme=dark] {
   --muted: #b7c2bd;
   --header: rgba(20, 24, 27, .97);
 }
-[data-theme=dark] .brand > svg { color: var(--citron); }
 [data-theme=dark] .service-module.selected { border-color: var(--citron); }
 [data-theme=dark] .underlined::after { background: #65742f; }
 [data-theme=dark] .filter-button.selected { background: var(--citron); color: var(--slate); border-color: var(--citron); }

@@ -34,4 +34,4 @@ The locally bundled files were retrieved using the Google Fonts stylesheet API. 
 
 ## Original work
 
-The Circuit Grid logo, SVG icons, circuit traces, illustrated home navigation, layout, copy and interaction code were created for this project. No icon runtime, stock theme or UI framework is included.
+The Ohmivra socket/junction logo (shared with the favicon), SVG icons, circuit traces, illustrated home navigation, layout, copy and interaction code were created for this project. No icon runtime, stock theme or UI framework is included.

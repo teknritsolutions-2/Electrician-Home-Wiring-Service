@@ -56,7 +56,7 @@ hr { border: 0; border-top: 1px solid var(--line); }
 .site-header { position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--line); background: var(--header); backdrop-filter: blur(12px); }
 .header-inner { display: flex; align-items: center; gap: 20px; min-height: 92px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0; font: 600 20px/1.25 var(--heading); letter-spacing: -.04em; }
-.brand > svg { width: 42px; height: 42px; color: var(--slate); }
+.brand-mark { width: 42px; height: 42px; flex-shrink: 0; object-fit: contain; }
 .brand-sub { display: block; font: 500 13px/1.8 var(--font); letter-spacing: 0; }
 .navigation { display: flex; align-items: center; justify-content: space-between; flex: 1; gap: 20px; }
 .navigation nav { display: flex; align-items: center; gap: 21px; margin-inline: auto; }
@@ -138,7 +138,6 @@ button:disabled { cursor: wait; }
 .closing-rail .terminal-mark svg { display: none; }
 .site-footer { padding-top: 65px; background: var(--slate); color: #f7f8f6; }
 .footer-grid { display: grid; grid-template-columns: 1.4fr .8fr 1.1fr .75fr; gap: 38px; padding-bottom: 50px; }
-.site-footer .brand > svg { color: var(--citron); }
 .footer-identity p { margin-top: 22px; color: #c4cec8; font-size: 16px; }
 .footer-identity .text-link { color: var(--citron); font-size: 15px; }
 .footer-grid > div > h3 { margin: 6px 0 20px; font: 600 17px/1.5 var(--font); letter-spacing: 0; }
@@ -456,7 +455,7 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .header-inner, .navigation { gap: 14px; }
   .navigation nav { gap: 15px; }
   .brand { font-size: 18px; gap: 8px; }
-  .brand > svg { width: 36px; height: 36px; }
+  .brand-mark { width: 36px; height: 36px; }
   .header-book { padding-inline: 13px; gap: 8px; }
   .hero-grid { gap: 45px; }
   .hero h1 { font-size: 53px; }
@@ -593,7 +592,7 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .topbar { display: none; }
   .header-inner { min-height: 78px; gap: 14px; }
   .brand { font-size: 20px; }
-  .brand > svg { width: 36px; height: 36px; }
+  .brand-mark { width: 36px; height: 36px; }
   .brand-sub { font-size: 13px; }
   .header-book { font-size: 15px; padding-inline: 15px; }
   .header-book svg { display: none; }
