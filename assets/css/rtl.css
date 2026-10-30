@@ -12,7 +12,11 @@
 [dir=rtl] h1, [dir=rtl] h2, [dir=rtl] h3, [dir=rtl] p { unicode-bidi: plaintext; text-align: right; }
 @media (max-width: 1099px) {
   [dir=rtl] .navigation { transform: translateX(105%); }
+  [dir=rtl] .hero-photo::after { background: linear-gradient(270deg, #14181bef 0%, #14181bbd 56%, #14181b35 100%); }
   [dir=rtl] .nav-open .navigation { transform: translateX(0); }
+}
+@media (max-width: 679px) {
+  [dir=rtl] .hero-photo::after { background: linear-gradient(270deg, #14181bea, #14181bb8); }
 }
 @media (prefers-reduced-motion: reduce) {
   [dir=rtl] .component-card, [dir=rtl] .component-card:hover { transform: none; }

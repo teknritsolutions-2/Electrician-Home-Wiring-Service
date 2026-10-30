@@ -25,6 +25,9 @@ These locally compressed Pexels photographs were visually inspected before use. 
 | `kitchen-lighting.jpg` | [Modern kitchen interior with elegant lighting, 36777864](https://www.pexels.com/photo/modern-kitchen-interior-with-elegant-lighting-36777864/) | Curtis Adams |
 | `lighting-detail.jpg` | [Photo of black hanging lights, 13108827](https://www.pexels.com/photo/photo-of-black-hanging-lights-13108827/) | See source attribution |
 
+| `outlet-detail.jpg` | [White wall sockets, 8101107](https://www.pexels.com/photo/white-wall-socket-on-white-painted-wall-8101107/) | See source attribution |
+| `socket-shadow.jpg` | [Electrical socket on a wall, 11163465](https://www.pexels.com/photo/an-electrical-socket-on-a-wall-11163465/) | Nikita Nikitin |
+
 ## Typography
 
 - [Sora](https://fonts.google.com/specimen/Sora), distributed under the SIL Open Font License 1.1; full license in `assets/fonts/Sora-LICENSE.txt`.
@@ -34,4 +37,4 @@ The locally bundled files were retrieved using the Google Fonts stylesheet API. 
 
 ## Original work
 
-The Ohmivra socket/junction logo (shared with the favicon), SVG icons, circuit traces, illustrated home navigation, layout, copy and interaction code were created for this project. No icon runtime, stock theme or UI framework is included.
+The Cirqavo socket/junction logo (shared with the favicon), SVG icons, circuit traces, illustrated home navigation, layout, copy and interaction code were created for this project. No icon runtime, stock theme or UI framework is included.

@@ -6,9 +6,9 @@ Only `index.html` is a root HTML page. All 13 secondary pages are in `pages/`. S
 
 ## Branding
 
-The public brand is **Ohmivra**, with the descriptor **Home Electrical Care**. See `BRANDING.md` for the dated naming search and its limits. Headers, footers and the favicon reference the same `circuit-socket-v2.svg?v=2` artwork. `logo-light.svg` and `logo-dark.svg` export that identical two-color symbol. The mark stays unflipped in RTL. The name and descriptor for generated content are in `ELECTRICAL_CONFIG.brand`; static HTML titles and brand lockups also contain the name for immediate, accessible rendering.
+The public brand is **Cirqavo**, displayed without a subtitle. See `BRANDING.md` for the dated naming search and its limits. Headers, footers and the favicon reference the same `circuit-socket-v2.svg?v=2` artwork. `logo-light.svg` and `logo-dark.svg` export that identical two-color symbol. The mark stays unflipped in RTL. The name for generated content are in `ELECTRICAL_CONFIG.brand`; static HTML titles and brand lockups also contain the name for immediate, accessible rendering.
 
-The existing favicon SVG and 16px/32px PNGs retain their approved artwork. Main stylesheet, configuration and behavior URLs use `?v=4` for this branding update; no hosting path or repository rename is required.
+The existing favicon SVG and 16px/32px PNGs retain their approved artwork. Main stylesheet, configuration and behavior URLs use `?v=5` for this branding update; no hosting path or repository rename is required.
 
 The two brand colors are Carbon Slate `#26343B` and Volt Citron `#D2ED68`. Semantic neutral and surface variables live at the top of `style.css`; dark overrides are in `dark-mode.css`. Headings use Sora; body copy uses DM Sans. Fonts and images do not request a third-party service at runtime.
 
@@ -36,11 +36,11 @@ There is no email address or submission destination configured. To add sending l
 
 Major headings, copy and actions share a start-aligned block. Narrow FAQ and legal containers follow the same logical page gutter, rather than centering the whole block. Home 1 retains the full request route; About uses a working-standards ledger; Services has its own compact visit summary and no copied homepage explorer. Home 2 has architectural lighting, a wiring/accessory comparison, panel callouts and separate estimate guidance. Closing content is specific to each page.
 
-Meaningful eyebrows and metadata use at least 14px, service descriptions and controls use 16px, and primary desktop paragraphs use 17–18px. The logo subtitle is a compact 13px brand lockup, not an instruction or form label. Substantive modules stack below 680px. Under 480px, the header places booking on a second row to retain a readable 15px label rather than shrinking the controls.
+Meaningful eyebrows and metadata use at least 14px, service descriptions and controls use 16px, and primary desktop paragraphs use 17–18px. Substantive modules stack below 680px. Under 480px, the header places booking on a second row to retain a readable 15px label rather than shrinking the controls.
 
 ## Accessibility and responsive behavior
 
-Navigation collapses below 1100px. Utilities move inside the drawer, and the booking action remains in the header. The drawer traps keyboard focus and closes by Escape or the scrim. The desktop Home menu supports pointer hover, click, keyboard activation, Escape and outside clicks. The service tabs use arrow keys, Home and End. FAQ sections use native `details`/`summary`.
+Navigation collapses below 1100px. Utilities move inside the drawer, and the booking action remains in the header. The closed compact drawer is inert. Opening it locks root scrolling and preserves the current page position; it traps keyboard focus and closes by Escape or the scrim. Resizing to desktop clears the lock. The desktop Home menu supports pointer hover, click, keyboard activation, Escape and outside clicks. The service tabs use arrow keys, Home and End. FAQ sections use native `details`/`summary`.
 
 Use the visible RTL/LTR control to change reading direction; photographs and the logo stay unflipped. Mobile pricing is arranged as readable rows rather than an overflowing table. SVG circuit traces are decorative. Reduced motion disables tracing and object movement.
 
@@ -49,3 +49,5 @@ Use the visible RTL/LTR control to change reading direction; photographs and the
 This is a static website. No build artifacts or dependencies need to be uploaded. All assets are local and every internal URL is relative. Any host must serve the correct MIME types for HTML, CSS, JS, JPEG, SVG and TTF. Preserve the folder tree when publishing to a GitHub Pages project subdirectory.
 
 The back-to-top arrow is a fixed 46px viewport control at the logical end/bottom, visible after 300px of scrolling. Its click returns to the actual page top; reduced-motion mode uses an immediate scroll. It is no longer positioned by the footer layout.
+
+Below 1100px, Home 1 uses the retained hero photograph as a full background with a direction-aware contrast overlay. Its decorative component clears the copy and actions on narrow tablets and is hidden below 680px. From 600–1099px the footer brand occupies a full row above three equal navigation columns; narrower phones stack those groups. Icon controls use 44px touch targets.

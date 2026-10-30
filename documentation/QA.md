@@ -37,7 +37,7 @@ The layout pass reported no horizontal overflow, missing displayed images or run
 
 Only Home 1 contains the complete service-request route. About uses a professional-standards ledger and communication questions. Services uses a compact visit summary, with neither homepage explorer repeated. Home 2 has separate lighting, wiring/accessory, panel, safety-consideration and estimate compositions. Closing headings and copy are page-specific. Contact has no duplicate booking CTA section below its form.
 
-The CSS is organized into eight source groups and consolidated breakpoint rules. Meaningful labels use at least 14px; body and service descriptions remain readable as modules stack on small screens. The compact 13px logo subtitle is an intentional brand lockup exception. Narrow FAQ/legal content starts at the shared logical gutter. There are no centered public text sections.
+The CSS is organized into eight source groups and consolidated breakpoint rules. Meaningful labels use at least 14px; body and service descriptions remain readable as modules stack on small screens. Narrow FAQ/legal content starts at the shared logical gutter. There are no centered public text sections.
 
 ## Visual evidence
 
@@ -76,8 +76,10 @@ The arrow is now fixed to the viewport, 20px from its logical end and bottom edg
 
 Sixteen browser cases covered Home 1 and Contact, 1440px/390px, LTR/RTL, and normal/reduced motion. Checks exercised real clicks from the footer, verified `scrollY === 0`, stable viewport placement across scroll positions, hidden-at-top behavior and the sticky header. See [desktop](screenshots/back-top-fixed-desktop.png) and [mobile](screenshots/back-top-fixed-mobile.png) captures.
 
-## Ohmivra identity update
+## Cirqavo identity and previous-project comparison
 
-All 14 page identities were checked after adopting **Ohmivra — Home Electrical Care**. Header and footer image URLs match the favicon SVG, both exported logos match its bytes, and dynamic service/article titles include the brand. The 616 layout combinations, 57 functional assertions and 48 accessibility audits passed again.
+All 14 pages now display **Cirqavo**, without a brand subtitle. Header/footer marks use the favicon SVG, logo exports match its bytes, and dynamic titles use the new name. See [BRANDING.md](BRANDING.md) for the dated naming screen and its limits.
 
-Eight dedicated header/footer captures cover desktop/mobile light, dark and RTL views: `screenshots/ohmivra-header-*` and `screenshots/ohmivra-footer-*`. Earlier full-page screenshots record the preceding layout refinement; these dedicated brand captures show the current identity. Name-search queries and their limits are recorded in [BRANDING.md](BRANDING.md).
+The current update passed 616 layout combinations, 57 functional assertions and 48 accessibility audits. An additional 72 compositions covered 18 breakpoint widths from 320–1440px in light/dark and LTR/RTL, checking background heroes, gutters, decorative overlap, footer columns and touch targets. Eight real-input drawer cases covered scroll locking, position preservation, closed-menu inertness and desktop resize. Full-page screenshots were refreshed for the current brand and layouts. Dedicated brand captures use `screenshots/cirqavo-header-*` and `screenshots/cirqavo-footer-*`.
+
+The comparison and resulting fixes are recorded in [PREVIOUS-PROJECT-COMPARISON.md](PREVIOUS-PROJECT-COMPARISON.md).

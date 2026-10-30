@@ -1,4 +1,4 @@
-# Ohmivra — Home Electrical Care
+# Cirqavo
 
 A complete, buildless HTML5, CSS3 and vanilla JavaScript website using the Circuit Grid design system. The workspace is the website root: `index.html` is the actual homepage.
 
