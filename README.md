@@ -25,13 +25,13 @@ Visit `http://localhost:4173`. A local HTTP server supports the clipboard handof
 
 ## Design refinement
 
-Home 2 now opens with a content-sized architectural lighting banner, a real fitted-light photograph and a restrained circuit detail. Services uses an expandable installation-plan index, an interactive infrastructure connection map, a compact supporting-service matrix and a short operational checklist. Service Details is a dynamic specification sheet with six service-specific banners, scope columns, an assessment checklist and a different installation-context image.
+Home 2 now opens with a content-sized architectural lighting banner, a real fitted-light photograph and a restrained circuit detail. Services uses expandable service panels styled with the shared Cirqavo components, an interactive infrastructure connection map, a compact supporting-service matrix and a short operational checklist. Service Details is a dynamic specification sheet with six service-specific banners, scope columns, an assessment checklist and a different installation-context image.
 
 Supporting text is consistently readable. The phone header keeps Cirqavo, a compact Book action and the drawer control on one row. Tablet gutters remain 40px from 600px upward. Existing branding, palette, Home 1 switchboard, Home 2 room explorer, themes, RTL and frontend enquiry behavior remain intact.
 
 See [the refinement report](documentation/REFINEMENT-2026-10-31.md) for implementation details, computed typography, browser results and screenshot evidence.
 
-The [service-directory follow-up](documentation/SERVICE-DIRECTORY-REDESIGN.md) records the installation sheets, keyboard/touch behavior and responsive checks and its browser evidence.
+The [service-directory follow-up](documentation/SERVICE-DIRECTORY-REDESIGN.md) records the brand-aligned styling, keyboard/touch behavior and responsive checks and its browser evidence.
 
 ## Important operational details
 

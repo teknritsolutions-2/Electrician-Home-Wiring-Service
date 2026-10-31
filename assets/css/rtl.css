@@ -6,7 +6,6 @@
 [dir=rtl] .premium-hero::after { background: linear-gradient(270deg, #14181be8 0%, #14181bc2 38%, #14181b22 82%); }
 [dir=rtl] .spec-banner::after { background: linear-gradient(270deg, #14181bf0 0%, #14181bce 40%, #14181b50 100%); }
 [dir=rtl] .room-plan { direction: ltr; }
-[dir=rtl] .service-case[open] > .case-summary { box-shadow: inset -4px 0 var(--citron); }
 [dir=rtl] [data-rate], [dir=rtl] [data-detail-price] { direction: ltr; unicode-bidi: isolate; text-align: right; }
 [dir=rtl] .room-hotspot { direction: rtl; }
 [dir=rtl] input[type=tel], [dir=rtl] input[type=email] { direction: ltr; text-align: right; }
