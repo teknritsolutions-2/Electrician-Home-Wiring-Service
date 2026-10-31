@@ -89,3 +89,11 @@ All 14 pages now display **Cirqavo**, without a brand subtitle. Header/footer ma
 The current update passed 616 layout combinations, 57 functional assertions and 48 accessibility audits. An additional 72 compositions covered 18 breakpoint widths from 320–1440px in light/dark and LTR/RTL, checking background heroes, gutters, decorative overlap, footer columns and touch targets. Eight real-input drawer cases covered scroll locking, position preservation, closed-menu inertness and desktop resize. Full-page screenshots were refreshed for the current brand and layouts. Dedicated brand captures use `screenshots/cirqavo-header-*` and `screenshots/cirqavo-footer-*`.
 
 The comparison and resulting fixes are recorded in [PREVIOUS-PROJECT-COMPARISON.md](PREVIOUS-PROJECT-COMPARISON.md).
+
+## Responsive booking placement
+
+Below 1100px, the booking button is inside the side panel beneath the theme/direction controls. The compact bar contains the brand and hamburger. Desktop keeps the inline booking action. All 14 pages share one booking link, with its full label and working relative URL.
+
+104 route/width/direction/theme placement checks and four drawer-to-booking routes passed. Six keyboard and short-screen cases verified that booking stays in the focus cycle, scrolls into view inside the drawer, and preserves the background scroll position. Cases include a 320×568 viewport. Desktop placement was visually reviewed.
+
+Evidence: [phone header](screenshots/booking-header-mobile.png), [phone drawer](screenshots/booking-drawer-mobile.png), [tablet drawer](screenshots/booking-drawer-tablet.png), [dark RTL drawer](screenshots/booking-drawer-tablet-rtl.png), [desktop header](screenshots/booking-header-desktop.png).

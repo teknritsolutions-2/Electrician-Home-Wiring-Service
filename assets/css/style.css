@@ -70,7 +70,6 @@ hr { border: 0; border-top: 1px solid var(--line); }
 .utilities { display: flex; gap: 8px; }
 .direction-toggle { height: 44px; min-width: 44px; border: 1px solid var(--line); border-radius: 5px; font-size: 14px; font-weight: 600; }
 .header-book { flex-shrink: 0; }
-.booking-short { display: none; }
 .nav-scrim { display: none; }
 
 /* 5. BUTTONS & CONTROLS --------------------------------------------------- */
@@ -556,7 +555,7 @@ img[src$='/fan.jpg'] { object-position: center top; }
   h2 { font-size: 35px; }
   .header-inner { min-height: 82px; gap: 20px; }
   .brand { margin-inline-end: auto; }
-  .header-book { order: 2; }
+  .navigation .header-book { width: 100%; min-height: 50px; padding: 12px; font-size: 16px; }
   .menu-toggle { display: flex; flex-direction: column; gap: 6px; order: 3; position: relative; z-index: 125; background: var(--paper); }
   .menu-toggle span { width: 18px; height: 1px; background: var(--ink); transition: transform .2s; }
   .navigation { position: fixed; inset-block-start: 0; inset-inline-start: 0; z-index: 120; display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 24px; width: min(365px, 85vw); height: 100dvh; padding: 35px; border-inline-end: 1px solid var(--line); background: var(--paper); overflow-y: auto; visibility: hidden; transform: translateX(-105%); transition: transform .25s, visibility 0s .25s; }
@@ -742,12 +741,9 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .header-inner { min-height: 76px; gap: 10px; }
   .site-header .brand { gap: 8px; font-size: 18px; }
   .site-header .brand-mark { width: 32px; height: 32px; }
-  .booking-label { display: none; }
-  .booking-short { display: inline; }
 
   .brand { font-size: 20px; }
   .brand-mark { width: 36px; height: 36px; }
-  .header-book svg { display: none; }
   .navigation { padding: 28px; }
   .navigation nav { margin-top: 35px; }
   .home-dropdown a { font-size: 16px; }

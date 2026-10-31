@@ -11,7 +11,6 @@ The working expandable structure is preserved. Only one service opens at a time,
 - Service numbers are compact metadata, leaving titles as the main navigation cues.
 - Photo frames use the existing restrained offset-shadow treatment instead of the technical drawing treatment.
 - Native summaries retain touch, Enter/Space and arrow/Home/End support. Selected headings remain clear of the sticky header.
-- Main and direction stylesheets use version 10. Main behavior remains version 9; configuration and the dark stylesheet remain version 6.
 
 ## Verification
 
