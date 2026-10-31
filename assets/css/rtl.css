@@ -1,11 +1,12 @@
 /* Only directional navigation glyphs change direction; photographs and logos do not. */
 [dir=rtl] .text-link > svg, [dir=rtl] .button > svg,
 [dir=rtl] .diagnostic-action > svg, [dir=rtl] .rate-enquire > svg,
-[dir=rtl] .service-tile-arrow svg, [dir=rtl] .residential-index a > svg, [dir=rtl] .related-services svg, [dir=rtl] .premium-link svg { transform: scaleX(-1); }
+[dir=rtl] .residential-index a > svg, [dir=rtl] .related-services svg, [dir=rtl] .premium-link svg { transform: scaleX(-1); }
 [dir=rtl] .form-grid select { background-position: left 12px center; }
 [dir=rtl] .premium-hero::after { background: linear-gradient(270deg, #14181be8 0%, #14181bc2 38%, #14181b22 82%); }
 [dir=rtl] .spec-banner::after { background: linear-gradient(270deg, #14181bf0 0%, #14181bce 40%, #14181b50 100%); }
 [dir=rtl] .room-plan { direction: ltr; }
+[dir=rtl] .service-case[open] > .case-summary { box-shadow: inset -4px 0 var(--citron); }
 [dir=rtl] [data-rate], [dir=rtl] [data-detail-price] { direction: ltr; unicode-bidi: isolate; text-align: right; }
 [dir=rtl] .room-hotspot { direction: rtl; }
 [dir=rtl] input[type=tel], [dir=rtl] input[type=email] { direction: ltr; text-align: right; }
@@ -13,13 +14,11 @@
 [dir=rtl] .component-card:hover { transform: rotate(-1deg) translateY(-4px); }
 [dir=rtl] h1, [dir=rtl] h2, [dir=rtl] h3, [dir=rtl] p { unicode-bidi: plaintext; text-align: right; }
 @media (max-width: 1099px) {
-  [dir=rtl] .service-tile-panel::after { background: linear-gradient(270deg, #26343b 0%, #26343b 53%, #26343b00 70%); }
   [dir=rtl] .navigation { transform: translateX(105%); }
   [dir=rtl] .hero-photo::after { background: linear-gradient(270deg, #14181bef 0%, #14181bbd 56%, #14181b35 100%); }
   [dir=rtl] .nav-open .navigation { transform: translateX(0); }
 }
 @media (max-width: 679px) {
-  [dir=rtl] .service-tile-panel::after { background: linear-gradient(180deg, #14181b25 0%, #14181b45 30%, #14181bea 64%, #14181b 100%); }
   [dir=rtl] .premium-hero::after { background: linear-gradient(270deg, #14181be8, #14181b9c); }
   [dir=rtl] .hero-photo::after { background: linear-gradient(270deg, #14181bea, #14181bb8); }
 }

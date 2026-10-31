@@ -8,7 +8,7 @@ Only `index.html` is a root HTML page. All 13 secondary pages are in `pages/`. S
 
 The public brand is **Cirqavo**, displayed without a subtitle. See `BRANDING.md` for the dated naming search and its limits. Headers, footers and the favicon reference the same `circuit-socket-v2.svg?v=2` artwork. `logo-light.svg` and `logo-dark.svg` export that identical two-color symbol. The mark stays unflipped in RTL. The name for generated content is in `ELECTRICAL_CONFIG.brand`; static HTML titles and brand lockups also contain the name for immediate, accessible rendering.
 
-The existing favicon SVG and 16px/32px PNGs retain their approved artwork. The main and direction stylesheets use `?v=8`; the dark stylesheet, configuration and behavior URLs use `?v=6`; no hosting path or repository rename is required.
+The existing favicon SVG and 16px/32px PNGs retain their approved artwork. The main and direction stylesheets and main behavior use `?v=9`; the dark stylesheet and configuration use `?v=6`; no hosting path or repository rename is required.
 
 The two brand colors are Carbon Slate `#26343B` and Volt Citron `#D2ED68`. Semantic neutral and surface variables live at the top of `style.css`; dark overrides are in `dark-mode.css`. Headings use Sora; body copy uses DM Sans. Fonts and images do not request a third-party service at runtime.
 
@@ -34,7 +34,7 @@ There is no email address or submission destination configured. To add sending l
 
 ## Section composition and alignment
 
-Major headings, copy and actions share a start-aligned block. Narrow FAQ and legal containers follow the same logical page gutter, rather than centering the whole block. Home 1 retains the full request route; About uses a working-standards ledger; Services has a joined photographic service board, an infrastructure connection map and a compact workflow. Home 2 has a photographic architectural-lighting banner, a wiring/accessory comparison, panel callouts and separate estimate guidance. Closing content is specific to each page.
+Major headings, copy and actions share a start-aligned block. Narrow FAQ and legal containers follow the same logical page gutter, rather than centering the whole block. Home 1 retains the full request route; About uses a working-standards ledger; Services has expandable installation sheets, an infrastructure connection map and a compact workflow. Home 2 has a photographic architectural-lighting banner, a wiring/accessory comparison, panel callouts and separate estimate guidance. Closing content is specific to each page.
 
 Meaningful eyebrows and metadata use at least 14px, service descriptions and controls use 16px, and primary desktop paragraphs use 17–18px. Substantive modules stack below 680px. Below 680px the header uses a single row with the full brand, a short “Book” label and a 44px menu control. The booking link retains its full accessible name.
 
@@ -58,6 +58,6 @@ Below 1100px, Home 1 uses the retained hero photograph as a full background with
 
 Services' five `[data-connection]` buttons describe an infrastructure connection rather than the Home 2 room view. `connectionDescriptions` controls their title, explanation and service link; the outlets node routes to the supported switchboard/socket service. Buttons support pointer/touch, Enter/Space and arrow/Home/End navigation, with an announced result. Keep the map explanatory rather than adding installation instructions.
 
-The Home 2 banner photograph is `architectural-lighting.jpg`. Its full-background image stays unmirrored; gradients reverse in RTL. The banner has no fixed minimum height. Its installation note and circuit path remain in document flow to prevent text overlap. The main and direction stylesheets use version 8; the dark stylesheet and JavaScript use version 6.
+The Home 2 banner photograph is `architectural-lighting.jpg`. Its full-background image stays unmirrored; gradients reverse in RTL. The banner has no fixed minimum height. Its installation note and circuit path remain in document flow to prevent text overlap. The main and direction stylesheets and main behavior use version 9; the dark stylesheet and configuration use version 6.
 
-The Services board uses five `.service-tile` links in a 12-column desktop grid. Tablets use two columns with a full-width protection panel; phones stack below 680px. `.service-tile-copy` keeps text in normal flow, and the image/gradient layers stay behind it. Keep panel minimums content-aware and preserve the contained tablet equipment photograph.
+The Services index uses five native `.service-case` details elements. Their summaries stay visible while one installation sheet opens beneath its own heading. Main JavaScript handles exclusive expansion, keyboard navigation and sticky-header clearance after user activation. Keep `.case-study` as `display: contents` so its figure shares the preview row and `.case-checkpoints` spans the full assessment footer. Below 680px, these parts stack in natural reading order.
