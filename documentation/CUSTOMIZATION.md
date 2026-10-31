@@ -8,7 +8,7 @@ Only `index.html` is a root HTML page. All 13 secondary pages are in `pages/`. S
 
 The public brand is **Cirqavo**, displayed without a subtitle. See `BRANDING.md` for the dated naming search and its limits. Headers, footers and the favicon reference the same `circuit-socket-v2.svg?v=2` artwork. `logo-light.svg` and `logo-dark.svg` export that identical two-color symbol. The mark stays unflipped in RTL. The name for generated content is in `ELECTRICAL_CONFIG.brand`; static HTML titles and brand lockups also contain the name for immediate, accessible rendering.
 
-The existing favicon SVG and 16px/32px PNGs retain their approved artwork. The main stylesheet uses `?v=11`; the direction stylesheet and main behavior use `?v=10`, and the dark stylesheet/configuration use `?v=6`; no hosting path or repository rename is required.
+The existing favicon SVG and 16px/32px PNGs retain their approved artwork. The main stylesheet uses `?v=12`; the direction stylesheet and main behavior use `?v=10`, and the dark stylesheet/configuration use `?v=6`; no hosting path or repository rename is required.
 
 The two brand colors are Carbon Slate `#26343B` and Volt Citron `#D2ED68`. Semantic neutral and surface variables live at the top of `style.css`; dark overrides are in `dark-mode.css`. Headings use Sora; body copy uses DM Sans. Fonts and images do not request a third-party service at runtime.
 
@@ -65,3 +65,7 @@ The Services index uses five native `.service-case` details elements. Their summ
 The service panel headers use carbon/citron icon plates and selected surfaces. Keep the explicit open-header text contrast and citron focus outline. `.case-image-frame` follows the restrained photo depth already used elsewhere; keep its shadow inside the panel padding. Technical drawing backgrounds and crop-mark artwork are no longer part of this section.
 
 Drawer Tab/Shift+Tab navigation cycles through the current visible links, utilities, booking action and menu control. Focus scrolls the drawer itself when required, preserving the background page position. Booking navigation closes the drawer through its existing delegated link handler.
+
+## Home 2 comparison alignment
+
+The two upgrade cards use a five-row CSS subgrid: heading, image, focus, discussion and service link. Definition-list wrappers use `display: contents` to share the information tracks. Keep this child order when editing the cards. Row heights follow the taller content automatically. Below 680px the cards stack with independent content-driven rows.

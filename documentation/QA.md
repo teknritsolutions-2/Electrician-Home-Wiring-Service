@@ -97,3 +97,11 @@ Below 1100px, the booking button is inside the side panel beneath the theme/dire
 104 route/width/direction/theme placement checks and four drawer-to-booking routes passed. Six keyboard and short-screen cases verified that booking stays in the focus cycle, scrolls into view inside the drawer, and preserves the background scroll position. Cases include a 320×568 viewport. Desktop placement was visually reviewed.
 
 Evidence: [phone header](screenshots/booking-header-mobile.png), [phone drawer](screenshots/booking-drawer-mobile.png), [tablet drawer](screenshots/booking-drawer-tablet.png), [dark RTL drawer](screenshots/booking-drawer-tablet-rtl.png), [desktop header](screenshots/booking-header-desktop.png).
+
+## Home 2 upgrade comparison alignment
+
+Shared grid rows now align both headings, photos, information blocks, dividers and service links even when one title or description wraps. Cards stack below 680px without reserving space for the other card. The numbered badges align with the top of each heading.
+
+124 browser layout cases passed across 19 widths (320–1920px), light/dark and LTR/RTL, including longer heading/description stress cases. Checks measured matching row tops/bottoms in paired layouts, nonoverlapping rows, stacked order and document overflow. Eight Home 2 axe WCAG A/AA audits passed; no browser runtime errors were recorded. These are headless viewport checks.
+
+Evidence: [wrapping-title tablet](screenshots/upgrade-alignment-768-light-ltr.png), [tablet](screenshots/upgrade-alignment-820-light-ltr.png), [phone](screenshots/upgrade-alignment-390-light-ltr.png), [desktop](screenshots/upgrade-alignment-1440-light-ltr.png), [dark RTL tablet](screenshots/upgrade-alignment-820-dark-rtl.png).

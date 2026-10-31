@@ -296,16 +296,17 @@ button:disabled { cursor: wait; }
 .lighting-notes span { display: block; margin-bottom: 16px; color: var(--muted); font-size: 15px; }
 .lighting-notes h3 { font-size: 22px; }
 .lighting-notes p { font-size: 16px; }
-.upgrade-comparison { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); overflow: clip; }
-.upgrade-comparison article { padding: 30px; }
+.upgrade-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border: 1px solid var(--line); border-radius: 8px; background: var(--paper); overflow: clip; }
+.upgrade-comparison article { display: grid; grid-row: span 5; grid-template-rows: subgrid; padding: 30px; }
 .upgrade-comparison article + article { border-inline-start: 1px solid var(--line); }
-.comparison-title { display: flex; align-items: center; gap: 16px; margin-bottom: 25px; }
+.comparison-title { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 25px; }
 .comparison-title h3 { margin: 0; }
-.upgrade-comparison article > img { height: 180px; border-radius: 5px; }
-.upgrade-comparison dl { margin-block: 25px; }
-.upgrade-comparison dl > div { padding-block: 17px; border-bottom: 1px solid var(--line); }
+.upgrade-comparison article > img { height: 180px; margin-bottom: 8px; border-radius: 5px; }
+.upgrade-comparison dl { display: contents; }
+.upgrade-comparison dl > div { padding-block: 20px; border-bottom: 1px solid var(--line); }
 .upgrade-comparison dt { margin-bottom: 8px; color: var(--muted); font-size: 15px; font-weight: 600; }
 .upgrade-comparison dd { margin: 0; font-size: 16px; }
+.upgrade-comparison article > .text-link { align-self: end; margin-top: 24px; }
 .panel-assembly { display: grid; grid-template-columns: .8fr 1.2fr; gap: 65px; align-items: start; }
 .panel-assembly figure { padding: 25px; border: 1px solid #ffffff30; border-radius: 8px; background: #ffffff08; }
 .panel-assembly figure img { max-height: 450px; border-radius: 5px; object-fit: contain; background: #e7ece9; }
@@ -822,6 +823,7 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .lighting-notes span { grid-row: auto; margin-bottom: 8px; }
   .lighting-notes h3 { font-size: 23px; margin-bottom: 8px; }
   .upgrade-comparison { grid-template-columns: 1fr; }
+  .upgrade-comparison article { grid-row: auto; grid-template-rows: auto; }
   .upgrade-comparison article + article { border-inline-start: 0; border-top: 1px solid var(--line); }
   .upgrade-comparison article > img { height: 185px; }
   .comparison-title h3 { font-size: 24px; }
