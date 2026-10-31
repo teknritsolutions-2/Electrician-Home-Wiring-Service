@@ -16,7 +16,7 @@ Pexels images are distributed under the [Pexels License](https://www.pexels.com/
 
 ## Additional photographs in the refined edition
 
-These locally compressed Pexels photographs were visually inspected before use. They add installation context, component details and completed lighting without replacing the retained homepage hero. No additional technician identity or business affiliation is implied.
+These locally compressed Pexels photographs were visually inspected before use. They add installation context, component details and completed lighting alongside the homepage imagery. No additional technician identity or business affiliation is implied.
 
 | Local asset | Original source | Photographer |
 | --- | --- | --- |
@@ -40,3 +40,12 @@ The locally bundled files were retrieved using the Google Fonts stylesheet API. 
 ## Original work
 
 The Cirqavo socket/junction logo (shared with the favicon), SVG icons, circuit traces, illustrated home navigation, layout, copy and interaction code were created for this project. No icon runtime, stock theme or UI framework is included.
+
+## Home 1 banner refresh
+
+| Local asset | Original source | Photographer |
+| --- | --- | --- |
+| `home-wiring-banner.jpg` | [Socket installation with a screwdriver, 5691589](https://www.pexels.com/photo/an-electrician-using-screwdriver-to-repair-the-ac-power-plugs-and-sockets-5691589/) | Ksenia Chernaya |
+| `home-switch-detail.jpg` | [White light switch, 3650908](https://www.pexels.com/photo/white-light-switch-on-white-painted-wall-3650908/) | Castorly Stock |
+
+Both photos are stored locally at optimized sizes under the Pexels License. The stock installation scene illustrates service context and does not identify Cirqavo staff. The former hero assets remain available where other sections still reference them.

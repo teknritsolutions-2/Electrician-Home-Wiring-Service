@@ -113,3 +113,11 @@ The seven-row table is replaced by four starting-labour cards and three assessme
 Validation: 380 pricing layout/filter cases (19 widths from 320–1920px, five categories, light/dark and LTR/RTL), eight axe WCAG A/AA audits, seven booking-prefill routes and 202 existing site functional assertions passed. Checks include document/card overflow and matching card-row positions. JavaScript syntax and pricing HTML nesting passed; no runtime errors were recorded. Browser checks use emulated viewports.
 
 Evidence: [desktop](screenshots/pricing-cards-1440-light-ltr.png), [tablet](screenshots/pricing-cards-820-light-ltr.png), [phone](screenshots/pricing-cards-390-light-ltr.png), [dark RTL tablet](screenshots/pricing-cards-820-dark-rtl.png).
+
+## Final Home 1 image refresh and release inspection
+
+Home 1 now uses a new socket-installation photograph in the main banner and a white light-switch photograph in the smaller detail card. Both files are local, optimized stock photos (about 77 KB combined), with descriptive alternative text, intrinsic dimensions and sources in `CREDITS.md`. Existing image assets remain for their other references. `.gitignore` was removed at the owner’s request.
+
+Final inspection passed 616 layout combinations covering all 14 pages, 11 viewport widths (320–1920px), light/dark and LTR/RTL; 48 axe WCAG A/AA audits; and 202 functional assertions. There were no layout issues, missing images or browser runtime errors. Static checks also passed HTML nesting, duplicate IDs, local asset/HTML links and fragments across all 14 pages, plus JavaScript syntax. These are browser viewport checks, not physical-device certification.
+
+The new banner was visually reviewed at desktop, tablet and phone widths in light LTR and dark RTL. Evidence: [desktop](screenshots/home1-final-1440-light-ltr.png), [tablet](screenshots/home1-final-820-light-ltr.png), [phone](screenshots/home1-final-390-light-ltr.png), [dark RTL desktop](screenshots/home1-final-1440-dark-rtl.png), [dark RTL tablet](screenshots/home1-final-820-dark-rtl.png), [dark RTL phone](screenshots/home1-final-390-dark-rtl.png).

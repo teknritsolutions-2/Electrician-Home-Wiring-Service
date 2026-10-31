@@ -50,7 +50,7 @@ This is a static website. No build artifacts or dependencies need to be uploaded
 
 The back-to-top arrow is a fixed 46px viewport control at the logical end/bottom, visible after 300px of scrolling. Its click returns to the actual page top; reduced-motion mode uses an immediate scroll. It is no longer positioned by the footer layout.
 
-Below 1100px, Home 1 uses the retained hero photograph as a full background with a direction-aware contrast overlay. Its decorative component clears the copy and actions on narrow tablets and is hidden below 680px. From 600–1099px the footer brand occupies a full row above three equal navigation columns; narrower phones stack those groups. Icon controls use 44px touch targets.
+Below 1100px, Home 1 uses `home-wiring-banner.jpg` as a full background with a direction-aware contrast overlay. The smaller banner card uses `home-switch-detail.jpg`. Its decorative component clears the copy and actions on narrow tablets and is hidden below 680px. From 600–1099px the footer brand occupies a full row above three equal navigation columns; narrower phones stack those groups. Icon controls use 44px touch targets.
 
 ## Service architecture and specification sheets
 
