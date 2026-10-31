@@ -1,5 +1,7 @@
 # Design refinement: QA evidence
 
+Latest section update: [Services directory redesign](SERVICE-DIRECTORY-REDESIGN.md), with 76 focused layout combinations, eight accessibility audits and 202 functional assertions.
+
 Current pass: **31 October 2026**. See [the current refinement report](REFINEMENT-2026-10-31.md) for the Home 2, Services and Service Details redesign, computed typography, 616 layout combinations, 202 functional assertions, 48 accessibility audits and current screenshots.
 
 ## Earlier refinement record — 30 October 2026
