@@ -17,3 +17,11 @@ Reviewed the user's actual Physiotherapy & Rehabilitation Clinic follow-up reque
 | Dashboard/auth and clinic-specific wave changes | Not applicable to this site's scope or visual system. |
 
 Validation includes 616 route/width/theme/direction layout combinations, 57 interaction assertions, 48 accessibility audits, plus 72 focused breakpoint compositions and eight real-input drawer cases. These are browser-emulated viewport checks, not claims of testing physical mobile devices. Current screenshots cover desktop, tablet, mobile, dark mode and RTL.
+
+## Additional prevention review — 31 October 2026
+
+The refinement also reviewed Driving Simulator changes `0507822` (mobile selector wrapping), `0abbc21` (drawer utilities and logo alignment), and `3c37ea6` (tablet stacking), Sweet Shop `b3f0e05`/`65fd09a` (short-page footers and back-to-top), and School Transport `64a617f` (sticky ancestors and dropdown handling). Aquarium's documented direction/theme and relative-link behavior was checked as a cross-project reference. No Home Appliance Repair checkout was available under the workspace's neighboring project directories; its applicable cases are covered by the supplied preventative checklist.
+
+The new pass retains clip-based horizontal containment and the working sticky header, keeps utility controls in the compact drawer, and uses a 76px single-row phone header rather than the previous two-row layout. At 600–679px, gutters now remain 40px; smaller phones use 20px. Services' substantial primary module stacks below 680px, while compact index rows retain useful photography. The drawer now exposes its controls immediately on opening so programmatic focus can enter reliably; visibility is delayed only when closing.
+
+The visual designs were not copied from other projects. See [the current refinement report](REFINEMENT-2026-10-31.md) for current browser evidence; the preceding table records the earlier comparison.

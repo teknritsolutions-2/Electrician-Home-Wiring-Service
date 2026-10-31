@@ -1,5 +1,9 @@
 # Design refinement: QA evidence
 
+Current pass: **31 October 2026**. See [the current refinement report](REFINEMENT-2026-10-31.md) for the Home 2, Services and Service Details redesign, computed typography, 616 layout combinations, 202 functional assertions, 48 accessibility audits and current screenshots.
+
+## Earlier refinement record — 30 October 2026
+
 Reviewed baseline: `45d072e88043e1698bb466cf1f896e81520e70c1`.
 
 Verification date: 30 October 2026. Browser automation used Playwright with the locally installed Brave/Chromium browser. Temporary testing tools stayed outside the repository; there are no application build or testing dependencies.

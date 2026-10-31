@@ -6,9 +6,9 @@ Only `index.html` is a root HTML page. All 13 secondary pages are in `pages/`. S
 
 ## Branding
 
-The public brand is **Cirqavo**, displayed without a subtitle. See `BRANDING.md` for the dated naming search and its limits. Headers, footers and the favicon reference the same `circuit-socket-v2.svg?v=2` artwork. `logo-light.svg` and `logo-dark.svg` export that identical two-color symbol. The mark stays unflipped in RTL. The name for generated content are in `ELECTRICAL_CONFIG.brand`; static HTML titles and brand lockups also contain the name for immediate, accessible rendering.
+The public brand is **Cirqavo**, displayed without a subtitle. See `BRANDING.md` for the dated naming search and its limits. Headers, footers and the favicon reference the same `circuit-socket-v2.svg?v=2` artwork. `logo-light.svg` and `logo-dark.svg` export that identical two-color symbol. The mark stays unflipped in RTL. The name for generated content is in `ELECTRICAL_CONFIG.brand`; static HTML titles and brand lockups also contain the name for immediate, accessible rendering.
 
-The existing favicon SVG and 16px/32px PNGs retain their approved artwork. Main stylesheet, configuration and behavior URLs use `?v=5` for this branding update; no hosting path or repository rename is required.
+The existing favicon SVG and 16px/32px PNGs retain their approved artwork. Main stylesheet, configuration and behavior URLs use `?v=6` for this refinement; no hosting path or repository rename is required.
 
 The two brand colors are Carbon Slate `#26343B` and Volt Citron `#D2ED68`. Semantic neutral and surface variables live at the top of `style.css`; dark overrides are in `dark-mode.css`. Headings use Sora; body copy uses DM Sans. Fonts and images do not request a third-party service at runtime.
 
@@ -34,9 +34,9 @@ There is no email address or submission destination configured. To add sending l
 
 ## Section composition and alignment
 
-Major headings, copy and actions share a start-aligned block. Narrow FAQ and legal containers follow the same logical page gutter, rather than centering the whole block. Home 1 retains the full request route; About uses a working-standards ledger; Services has its own compact visit summary and no copied homepage explorer. Home 2 has architectural lighting, a wiring/accessory comparison, panel callouts and separate estimate guidance. Closing content is specific to each page.
+Major headings, copy and actions share a start-aligned block. Narrow FAQ and legal containers follow the same logical page gutter, rather than centering the whole block. Home 1 retains the full request route; About uses a working-standards ledger; Services has a numbered primary index, an infrastructure connection map and a compact workflow. Home 2 has a photographic architectural-lighting banner, a wiring/accessory comparison, panel callouts and separate estimate guidance. Closing content is specific to each page.
 
-Meaningful eyebrows and metadata use at least 14px, service descriptions and controls use 16px, and primary desktop paragraphs use 17–18px. Substantive modules stack below 680px. Under 480px, the header places booking on a second row to retain a readable 15px label rather than shrinking the controls.
+Meaningful eyebrows and metadata use at least 14px, service descriptions and controls use 16px, and primary desktop paragraphs use 17–18px. Substantive modules stack below 680px. Below 680px the header uses a single row with the full brand, a short “Book” label and a 44px menu control. The booking link retains its full accessible name.
 
 ## Accessibility and responsive behavior
 
@@ -51,3 +51,11 @@ This is a static website. No build artifacts or dependencies need to be uploaded
 The back-to-top arrow is a fixed 46px viewport control at the logical end/bottom, visible after 300px of scrolling. Its click returns to the actual page top; reduced-motion mode uses an immediate scroll. It is no longer positioned by the footer layout.
 
 Below 1100px, Home 1 uses the retained hero photograph as a full background with a direction-aware contrast overlay. Its decorative component clears the copy and actions on narrow tablets and is hidden below 680px. From 600–1099px the footer brand occupies a full row above three equal navigation columns; narrower phones stack those groups. Icon controls use 44px touch targets.
+
+## Service architecture and specification sheets
+
+`serviceData` remains the source for six service IDs. Service Details uses `[data-detail-image]` as its full-width photographic banner. The `contexts` map supplies a different photograph and caption for `[data-detail-context-image]` and `[data-detail-context-caption]`. Shared dynamic fields update via the original `data-detail-*` attributes; every `[data-detail-book]` link is updated, including the closing action. Related links omit the current service. No sticky booking sidebar remains.
+
+Services' five `[data-connection]` buttons describe an infrastructure connection rather than the Home 2 room view. `connectionDescriptions` controls their title, explanation and service link; the outlets node routes to the supported switchboard/socket service. Buttons support pointer/touch, Enter/Space and arrow/Home/End navigation, with an announced result. Keep the map explanatory rather than adding installation instructions.
+
+The Home 2 banner photograph is `architectural-lighting.jpg`. Its full-background image stays unmirrored; gradients reverse in RTL. The banner has no fixed minimum height. Its installation note and circuit path remain in document flow to prevent text overlap. Shared CSS URLs and behavior use version 6.

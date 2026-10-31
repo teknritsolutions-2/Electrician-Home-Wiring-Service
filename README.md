@@ -25,9 +25,11 @@ Visit `http://localhost:4173`. A local HTTP server supports the clipboard handof
 
 ## Design refinement
 
-The refined edition uses start-aligned editorial headings, larger supporting type, a diagnostic service index, a modular request route, an architectural lighting composition, a professional-standards ledger, and a varied service directory. The existing switchboard selector, Home 2 room selector and enquiry workflow remain intact.
+Home 2 now opens with a content-sized architectural lighting banner, a real fitted-light photograph and a restrained circuit detail. Services uses a numbered residential index, an interactive infrastructure connection map, a compact supporting-service matrix and a short operational checklist. Service Details is a dynamic specification sheet with six service-specific banners, scope columns, an assessment checklist and a different installation-context image.
 
-The consolidated stylesheet is organized into tokens, typography, layout, navigation, controls, shared components, page components and responsive rules. The new socket/junction favicon uses a freshly named, versioned SVG with PNG fallback. Updated screenshots cover eight key pages at desktop, tablet and mobile widths.
+Supporting text is consistently readable. The phone header keeps Cirqavo, a compact Book action and the drawer control on one row. Tablet gutters remain 40px from 600px upward. Existing branding, palette, Home 1 switchboard, Home 2 room explorer, themes, RTL and frontend enquiry behavior remain intact.
+
+See [the refinement report](documentation/REFINEMENT-2026-10-31.md) for implementation details, computed typography, browser results and screenshot evidence.
 
 ## Important operational details
 

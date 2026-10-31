@@ -1,10 +1,12 @@
 /* Only directional navigation glyphs change direction; photographs and logos do not. */
 [dir=rtl] .text-link > svg, [dir=rtl] .button > svg,
 [dir=rtl] .diagnostic-action > svg, [dir=rtl] .rate-enquire > svg,
-[dir=rtl] .residential-index a > svg { transform: scaleX(-1); }
+[dir=rtl] .residential-index a > svg, [dir=rtl] .related-services svg, [dir=rtl] .premium-link svg { transform: scaleX(-1); }
 [dir=rtl] .form-grid select { background-position: left 12px center; }
-[dir=rtl] .premium-hero::after { background: linear-gradient(270deg, #14181be0, #14181b40 85%); }
+[dir=rtl] .premium-hero::after { background: linear-gradient(270deg, #14181be8 0%, #14181bc2 38%, #14181b22 82%); }
+[dir=rtl] .spec-banner::after { background: linear-gradient(270deg, #14181bf0 0%, #14181bce 40%, #14181b50 100%); }
 [dir=rtl] .room-plan { direction: ltr; }
+[dir=rtl] [data-rate], [dir=rtl] [data-detail-price] { direction: ltr; unicode-bidi: isolate; text-align: right; }
 [dir=rtl] .room-hotspot { direction: rtl; }
 [dir=rtl] input[type=tel], [dir=rtl] input[type=email] { direction: ltr; text-align: right; }
 [dir=rtl] .component-card { transform: rotate(-5deg); }
@@ -16,6 +18,7 @@
   [dir=rtl] .nav-open .navigation { transform: translateX(0); }
 }
 @media (max-width: 679px) {
+  [dir=rtl] .premium-hero::after { background: linear-gradient(270deg, #14181be8, #14181b9c); }
   [dir=rtl] .hero-photo::after { background: linear-gradient(270deg, #14181bea, #14181bb8); }
 }
 @media (prefers-reduced-motion: reduce) {

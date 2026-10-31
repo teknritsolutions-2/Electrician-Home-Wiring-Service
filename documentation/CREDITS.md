@@ -28,6 +28,8 @@ These locally compressed Pexels photographs were visually inspected before use. 
 | `outlet-detail.jpg` | [White wall sockets, 8101107](https://www.pexels.com/photo/white-wall-socket-on-white-painted-wall-8101107/) | See source attribution |
 | `socket-shadow.jpg` | [Electrical socket on a wall, 11163465](https://www.pexels.com/photo/an-electrical-socket-on-a-wall-11163465/) | Nikita Nikitin |
 
+| `architectural-lighting.jpg` | [Two pendant lamps on a concrete ceiling, 973505](https://www.pexels.com/photo/two-black-pendant-lamp-on-white-concrete-ceiling-973505/) | See source attribution |
+
 ## Typography
 
 - [Sora](https://fonts.google.com/specimen/Sora), distributed under the SIL Open Font License 1.1; full license in `assets/fonts/Sora-LICENSE.txt`.
