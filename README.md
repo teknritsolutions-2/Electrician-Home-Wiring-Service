@@ -49,3 +49,5 @@ Rates are illustrative design defaults, clearly disclosed on the site. Edit all 
 Repository: [teknritsolutions-2/Electrician-Home-Wiring-Service](https://github.com/teknritsolutions-2/Electrician-Home-Wiring-Service). The production destination is [GitHub Pages](https://teknritsolutions-2.github.io/Electrician-Home-Wiring-Service/), publishing `main` from `/ (root)`. `pages/404.html` is an intentional utility page; the exact requested structure does not include a root `404.html`, so GitHub's default unknown-route response will not automatically use it.
 
 Read the [brand and name-screening notes](documentation/BRANDING.md), [customization and integration notes](documentation/CUSTOMIZATION.md), [asset credits](documentation/CREDITS.md) and [QA evidence](documentation/QA.md).
+
+The Pricing Guide uses four aligned starting-price cards and three project quote cards, with electrical icons, category filtering and service-specific booking links. It adapts to tablet and phone widths and supports dark mode and RTL. See `documentation/QA.md` for verification and screenshots.

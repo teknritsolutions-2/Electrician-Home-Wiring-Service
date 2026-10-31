@@ -8,7 +8,7 @@ Only `index.html` is a root HTML page. All 13 secondary pages are in `pages/`. S
 
 The public brand is **Cirqavo**, displayed without a subtitle. See `BRANDING.md` for the dated naming search and its limits. Headers, footers and the favicon reference the same `circuit-socket-v2.svg?v=2` artwork. `logo-light.svg` and `logo-dark.svg` export that identical two-color symbol. The mark stays unflipped in RTL. The name for generated content is in `ELECTRICAL_CONFIG.brand`; static HTML titles and brand lockups also contain the name for immediate, accessible rendering.
 
-The existing favicon SVG and 16px/32px PNGs retain their approved artwork. The main stylesheet uses `?v=12`; the direction stylesheet and main behavior use `?v=10`, and the dark stylesheet/configuration use `?v=6`; no hosting path or repository rename is required.
+The existing favicon SVG and 16px/32px PNGs retain their approved artwork. The main stylesheet uses `?v=13`; the direction stylesheet uses `?v=10` and main behavior uses `?v=11`, and the dark stylesheet/configuration use `?v=6`; no hosting path or repository rename is required.
 
 The two brand colors are Carbon Slate `#26343B` and Volt Citron `#D2ED68`. Semantic neutral and surface variables live at the top of `style.css`; dark overrides are in `dark-mode.css`. Headings use Sora; body copy uses DM Sans. Fonts and images do not request a third-party service at runtime.
 
@@ -16,7 +16,7 @@ The two brand colors are Carbon Slate `#26343B` and Volt Citron `#D2ED68`. Seman
 
 Each HTML page contains its complete layout, including a generated common header and footer. To change shared navigation, update all 14 files consistently. Keep the relative `../` prefix for secondary pages. Service detail fields, explorer descriptions and service query keys are in `serviceData` in `main.js`. The default detail route displays wiring. Unknown service/article query values safely fall back to a known entry.
 
-Prices appear through `data-rate` attributes and use `ELECTRICAL_CONFIG.prices`, including the service detail sidebar. No other source contains hard-coded numeric prices. The empty provider fields reserve space for verified details; entering a value there alone does not render it or activate a sending integration. Add a real contact block only after those details have been verified.
+Prices appear through `data-rate` attributes and use `ELECTRICAL_CONFIG.prices`, including service detail pages. No other source contains hard-coded numeric prices. The empty provider fields reserve space for verified details; entering a value there alone does not render it or activate a sending integration. Add a real contact block only after those details have been verified.
 
 The five Home Journal articles are written as general service-planning information. They do not include hazardous repair instructions, fake author profiles or invented publishing history.
 
@@ -42,7 +42,7 @@ Meaningful eyebrows and metadata use at least 14px, service descriptions and con
 
 Navigation collapses below 1100px. Utilities move inside the drawer, and the booking action remains in the header. The closed compact drawer is inert. Opening it locks root scrolling and preserves the current page position; it traps keyboard focus and closes by Escape or the scrim. Resizing to desktop clears the lock. The desktop Home menu supports pointer hover, click, keyboard activation, Escape and outside clicks. The service tabs use arrow keys, Home and End. FAQ sections use native `details`/`summary`.
 
-Use the visible RTL/LTR control to change reading direction; photographs and the logo stay unflipped. Mobile pricing is arranged as readable rows rather than an overflowing table. SVG circuit traces are decorative. Reduced motion disables tracing and object movement.
+Use the visible RTL/LTR control to change reading direction; photographs and the logo stay unflipped. Pricing uses aligned service cards: four columns on desktop, two below 900px and one below 480px. Larger-project quote cards use three columns, two below 900px (the final card fills the row), and one below 680px. SVG circuit traces are decorative. Reduced motion disables tracing and object movement.
 
 ## Deployment
 
@@ -69,3 +69,9 @@ Drawer Tab/Shift+Tab navigation cycles through the current visible links, utilit
 ## Home 2 comparison alignment
 
 The two upgrade cards use a five-row CSS subgrid: heading, image, focus, discussion and service link. Definition-list wrappers use `display: contents` to share the information tracks. Keep this child order when editing the cards. Row heights follow the taller content automatically. Below 680px the cards stack with independent content-driven rows.
+
+## Pricing cards
+
+The Pricing Guide separates four starting-labour cards from three assessment-based project cards. Edit rates in `ELECTRICAL_CONFIG.prices`; numeric rupee amounts are styled prominently with their existing “onwards” qualifier, and other configured wording is displayed as text. The illustrative-pricing disclosure stays beneath the cards.
+
+Each service card retains `data-category` and its service-specific booking URL. Category filters hide unmatched cards and empty groups, update `aria-pressed`, and announce the result count in a status region. Shared subgrid tracks align headings, amounts, descriptions and actions within each row; single-column cards use natural content heights. Keep the card child order when editing.

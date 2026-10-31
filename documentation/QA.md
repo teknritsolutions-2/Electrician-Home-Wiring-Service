@@ -105,3 +105,11 @@ Shared grid rows now align both headings, photos, information blocks, dividers a
 124 browser layout cases passed across 19 widths (320–1920px), light/dark and LTR/RTL, including longer heading/description stress cases. Checks measured matching row tops/bottoms in paired layouts, nonoverlapping rows, stacked order and document overflow. Eight Home 2 axe WCAG A/AA audits passed; no browser runtime errors were recorded. These are headless viewport checks.
 
 Evidence: [wrapping-title tablet](screenshots/upgrade-alignment-768-light-ltr.png), [tablet](screenshots/upgrade-alignment-820-light-ltr.png), [phone](screenshots/upgrade-alignment-390-light-ltr.png), [desktop](screenshots/upgrade-alignment-1440-light-ltr.png), [dark RTL tablet](screenshots/upgrade-alignment-820-dark-rtl.png).
+
+## Visual pricing guide redesign
+
+The seven-row table is replaced by four starting-labour cards and three assessment-based project cards. Recognizable electrical icons, large configured amounts and citron enquiry buttons match the existing Cirqavo design. Shared tracks align card headings, prices, descriptions and actions. The repeated project explanation was removed, with one concise illustrative-pricing/materials disclosure retained. Filters hide unmatched cards and empty groups and announce result counts. All service-specific enquiry URLs remain intact.
+
+Validation: 380 pricing layout/filter cases (19 widths from 320–1920px, five categories, light/dark and LTR/RTL), eight axe WCAG A/AA audits, seven booking-prefill routes and 202 existing site functional assertions passed. Checks include document/card overflow and matching card-row positions. JavaScript syntax and pricing HTML nesting passed; no runtime errors were recorded. Browser checks use emulated viewports.
+
+Evidence: [desktop](screenshots/pricing-cards-1440-light-ltr.png), [tablet](screenshots/pricing-cards-820-light-ltr.png), [phone](screenshots/pricing-cards-390-light-ltr.png), [dark RTL tablet](screenshots/pricing-cards-820-dark-rtl.png).

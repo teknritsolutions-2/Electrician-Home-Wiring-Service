@@ -447,23 +447,43 @@ button:disabled { cursor: wait; }
 .related-services { display: flex; flex-wrap: wrap; gap: 0 28px; }
 .related-services a { display: inline-flex; align-items: center; gap: 12px; padding-block: 12px; border-bottom: 1px solid var(--line); font-size: 16px; }
 .related-services svg { width: 18px; height: 18px; }
-.price-notice { margin-bottom: 35px; }
-.pricing-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.pricing-intro { display: grid; grid-template-columns: 1.2fr .8fr; align-items: center; gap: 60px; margin-bottom: 48px; }
+.pricing-intro h2 { max-width: 650px; margin-bottom: 20px; }
+.pricing-intro p { max-width: 570px; margin: 0; }
+.pricing-intro figure { position: relative; overflow: clip; border-radius: 8px; background: var(--slate); }
+.pricing-intro figure img { height: 240px; opacity: .8; }
+.pricing-intro figcaption { position: absolute; inset-inline-start: 22px; bottom: 20px; padding: 12px 16px; border-radius: 5px; color: #fff; background: var(--slate); font-size: 17px; line-height: 1.5; }
+.pricing-filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
 .filter-button { min-height: 46px; padding: 10px 16px; border: 1px solid var(--line); border-radius: 5px; font-size: 16px; }
 .filter-button.selected { border-color: var(--slate); background: var(--slate); color: #fff; }
-.rate-table-wrap { position: relative; overflow: auto; border: 1px solid var(--line); border-radius: 8px; }
-.rate-table { width: 100%; border-collapse: collapse; text-align: start; font-size: 17px; }
-.rate-table caption { padding: 22px 25px; text-align: start; font-size: 19px; font-weight: 600; }
-.rate-table th, .rate-table td { padding: 22px 25px; border-top: 1px solid var(--line); text-align: start; }
-.rate-table thead { background: var(--soft); color: var(--muted); font-size: 15px; }
-.rate-table tbody th { font-weight: 600; }
-.rate-table tbody td:nth-child(2) { color: var(--muted); font-size: 16px; }
-.rate-table td[data-rate] { white-space: nowrap; font-size: 17px; font-weight: 600; }
-.rate-table td:last-child { white-space: nowrap; font-size: 16px; }
-.two-features { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
-.two-features > article { padding-top: 25px; border-top: 1px solid var(--line); }
-.two-features h3 { margin-top: 15px; }
-.pricing-explainer { margin-top: 40px; }
+.pricing-group:not([hidden]) + .pricing-group { margin-top: 48px; }
+.pricing-group-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
+.pricing-group-heading .eyebrow { margin-bottom: 10px; }
+.pricing-group-heading h2 { margin: 0; font-size: 28px; }
+.price-basis { flex-shrink: 0; padding: 7px 12px; border-radius: 5px; background: var(--soft); color: var(--muted); font-size: 14px; }
+.price-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0 18px; }
+.price-card { display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 0; min-width: 0; padding: 25px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); }
+.price-card-top { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.price-card-top > span:last-child { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .04em; line-height: 1.5; }
+.price-icon { display: inline-flex; width: 44px; height: 44px; flex-shrink: 0; align-items: center; justify-content: center; border-radius: 7px; background: var(--slate); color: var(--citron); }
+.price-card h3 { margin-bottom: 24px; font-size: 22px; }
+.price-value { display: block; margin-bottom: 20px; color: var(--ink); line-height: 1.2; }
+.price-value strong { font-family: var(--heading); font-size: 36px; font-weight: 500; letter-spacing: -.05em; }
+.price-value small { margin-inline-start: 5px; color: var(--muted); font-size: 14px; }
+.price-card > p { margin-bottom: 24px; font-size: 16px; }
+.price-enquire { align-self: end; justify-content: space-between; min-width: 0; width: 100%; min-height: 48px; padding: 11px 16px; font-size: 16px; }
+.project-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 20px; }
+.project-price-card { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; min-width: 0; padding: 26px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); }
+.project-price-title { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+.project-price-title .price-icon { background: var(--soft); color: var(--ink); }
+.project-price-title h3 { margin: 0; font-size: 22px; }
+.project-price-card > p { margin-bottom: 24px; font-size: 16px; }
+.project-price { display: block; margin-bottom: 20px; font-size: 19px; font-weight: 600; }
+.project-price-card .text-link { align-self: end; justify-content: space-between; font-size: 16px; }
+.pricing-disclosure { display: flex; align-items: flex-start; gap: 18px; margin-top: 32px; padding: 22px 25px; border-radius: 8px; background: var(--soft); }
+.pricing-disclosure .price-icon { width: 36px; height: 36px; background: transparent; color: var(--muted); }
+.pricing-disclosure p { margin: 0; font-size: 15px; }
+.pricing-disclosure strong { color: var(--ink); }
 .booking-layout { display: grid; grid-template-columns: .7fr 1.3fr; align-items: start; gap: 75px; }
 .booking-aside .notice { margin-block: 28px; }
 .booking-aside > h3 { margin-top: 30px; }
@@ -608,7 +628,6 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .room-hotspot span { margin-inline-start: 5px; }
   .lighting-notes { gap: 25px; }
   .panel-assembly { gap: 40px; }
-  .rate-table th, .rate-table td { padding: 19px; }
   .booking-layout { gap: 40px; grid-template-columns: .7fr 1.3fr; }
   .booking-aside h2 { font-size: 32px; }
   .booking-aside .notice { padding: 22px; }
@@ -658,6 +677,11 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .lighting-notes > div:last-child { border: 0; }
   .lighting-notes span { grid-row: 1 / 3; margin: 0; }
   .lighting-notes p { margin: 0; }
+  .pricing-intro { gap: 30px; }
+  .price-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .project-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+  .project-price-card:last-child { grid-column: 1 / -1; }
+  .pricing-group-heading { align-items: flex-start; flex-direction: column; gap: 14px; }
   .upgrade-comparison article { padding: 25px; }
   .comparison-title { align-items: flex-start; }
   .comparison-title h3 { font-size: 23px; }
@@ -822,6 +846,12 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .lighting-notes > div { grid-template-columns: 1fr; gap: 8px; }
   .lighting-notes span { grid-row: auto; margin-bottom: 8px; }
   .lighting-notes h3 { font-size: 23px; margin-bottom: 8px; }
+  .pricing-intro { grid-template-columns: 1fr; gap: 24px; margin-bottom: 30px; }
+  .pricing-intro figure img { height: 180px; }
+  .pricing-group-heading h2 { font-size: 26px; }
+  .project-cards { grid-template-columns: 1fr; }
+  .project-price-card { grid-row: auto; grid-template-rows: auto; }
+  .pricing-disclosure { padding: 20px; gap: 10px; }
   .upgrade-comparison { grid-template-columns: 1fr; }
   .upgrade-comparison article { grid-row: auto; grid-template-rows: auto; }
   .upgrade-comparison article + article { border-inline-start: 0; border-top: 1px solid var(--line); }
@@ -856,22 +886,10 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .notice p { font-size: 16px; }
   .pricing-filters { gap: 9px; }
   .filter-button { font-size: 15px; padding: 10px 13px; }
-  .rate-table { display: block; }
-  .rate-table caption { display: block; padding: 20px; font-size: 18px; }
-  .rate-table thead { position: absolute; width: 1px; height: 1px; overflow: clip; clip-path: inset(50%); }
-  .rate-table tbody { display: block; }
-  .rate-table tr { display: grid; grid-template-columns: 1fr auto; padding: 22px; border-top: 1px solid var(--line); }
-  .rate-table tbody th, .rate-table tbody td { padding: 0; border: 0; }
-  .rate-table tbody th { grid-column: 1 / -1; padding-bottom: 8px; font-size: 18px; }
-  .rate-table tbody td:nth-child(2) { grid-column: 1 / -1; padding-bottom: 18px; font-size: 16px; }
-  .rate-table td[data-rate] { align-self: center; font-size: 16px; white-space: normal; }
-  .rate-table td:last-child { padding-inline-start: 12px; font-size: 16px; }
-  .rate-table td:last-child a { display: inline-block; padding-block: 8px; }
   .component-detail { padding: 23px; gap: 22px; }
   .component-detail img { width: 85px; height: 100px; }
   .component-detail h3 { font-size: 22px; }
   .component-detail p { font-size: 16px; }
-  .two-features { grid-template-columns: 1fr; gap: 25px; }
   .booking-layout { gap: 35px; }
   .booking-aside h2 { font-size: 30px; }
   .form-heading h2, .request-summary h2 { font-size: 30px; }
@@ -943,12 +961,16 @@ img[src$='/fan.jpg'] { object-position: center top; }
   .room-hotspot span { display: none; }
   .room-hotspot[data-room=panel] { left: 73%; top: 87%; }
   .room-hotspot[data-room=wiring] { left: 23%; top: 87%; }
+  .price-cards { grid-template-columns: 1fr; gap: 16px; }
+  .price-card { grid-row: auto; grid-template-rows: auto; padding: 24px; }
+  .price-card-top { margin-bottom: 20px; }
+  .price-card h3 { margin-bottom: 18px; }
+  .price-value strong { font-size: 38px; }
+  .pricing-disclosure { display: block; }
+  .pricing-disclosure > .price-icon { margin-bottom: 8px; }
   .comparison-title { flex-direction: column; }
   .component-detail { display: block; }
   .component-detail img { margin-bottom: 25px; }
-  .rate-table tr { padding: 20px; }
-  .rate-table td[data-rate] { font-size: 16px; }
-  .rate-table td:last-child { padding-inline-start: 10px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
